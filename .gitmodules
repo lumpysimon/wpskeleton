@@ -1,0 +1,3 @@
+[submodule "content/plugins/uploads-by-proxy"]
+	path = content/plugins/uploads-by-proxy
+	url = https://github.com/pdclark/uploads-by-proxy.git
