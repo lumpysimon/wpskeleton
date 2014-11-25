@@ -11,9 +11,10 @@ define( 'DB_PASSWORD', 'root' );
 define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 
 /*******************************************************
-* set a constant to indicate local staging
+* set a constant to indicate local / staging server
 *******************************************************/
 define( 'WP_LOCAL_DEV', true );
+//define( 'WP_STAGING_DEV', true );
 
 /*******************************************************
 * You can add local specific things here
