@@ -15,4 +15,4 @@ WordPress core exists in the 'cms' folder, 1 level up from the sites root. This 
 5. Once logged into the WordPress admin, navigate to Settings and remove /cms from the setting labelled 'Site Address (URL)'
 6. Thats it you should be good to go.
 
-Remember that the /content folder now works as the usually /wp-content folder normally does storing your plugins and themes etc.
+Remember that the /content folder now works as the usually `/wp-content` folder normally does storing your plugins and themes etc.
