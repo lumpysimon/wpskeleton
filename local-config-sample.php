@@ -11,8 +11,13 @@ define( 'DB_PASSWORD', 'root' );
 define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 
 /*******************************************************
+* set a constant to indicate local staging
+*******************************************************/
+define( 'WP_LOCAL_DEV', true );
+
+/*******************************************************
 * You can add local specific things here
 * for example using the uploads-by-proxy plugin to load
 * media from uploads from the live site.
 *******************************************************/
-define( 'UBP_SITEURL', 'http://livedomain.com' );
+//define( 'UBP_SITEURL', 'http://livedomain.com' );

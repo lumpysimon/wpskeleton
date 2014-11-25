@@ -3,10 +3,14 @@
 * Load database info and local development parameters
 ********************************************************************************/
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
-	define( 'WP_LOCAL_DEV', true );
 	include( dirname( __FILE__ ) . '/local-config.php' );
 } else {
+	
+	/* set constants for local and staging to false - we are live! */
 	define( 'WP_LOCAL_DEV', false );
+	define( 'WP_LOCAL_DEV', false );
+	
+	/* db details for live production server */
 	define( 'DB_NAME', '' );
 	define( 'DB_USER', '' );
 	define( 'DB_PASSWORD', '' );
@@ -40,7 +44,7 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 /********************************************************************************
 * Table prefix
 ********************************************************************************/
-$table_prefix  = 'wp_';
+$table_prefix  = 'site_';
 
 /********************************************************************************
 * Language
@@ -51,6 +55,11 @@ define( 'WPLANG', '' );
 remove file editor in WordPress
 ********************************************************************************/
 define( 'DISALLOW_FILE_EDIT', true );
+
+/********************************************************************************
+* prevent auto updating of wordpress
+********************************************************************************/
+define( 'WP_AUTO_UPDATE_CORE', false );
 
 /********************************************************************************
 // Bootstrap WordPress
