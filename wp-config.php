@@ -8,7 +8,7 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	
 	/* set constants for local and staging to false - we are live! */
 	define( 'WP_LOCAL_DEV', false );
-	define( 'WP_LOCAL_DEV', false );
+	define( 'WP_STAGING_DEV', false );
 	
 	/* db details for live production server */
 	define( 'DB_NAME', '' );
