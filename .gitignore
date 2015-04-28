@@ -10,6 +10,9 @@ content/blogs.dir/
 content/cache/
 content/upgrade/
 content/uploads/
+content/mu-plugins/debugging.php
+content/mu-plugins/testing.php
+content/plugins/debug-bar/
 content/wp-cache-config.php
 *.codekit
 *.scssc
