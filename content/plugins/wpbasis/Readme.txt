@@ -3,8 +3,8 @@ Contributors: wpmarkuk
 Donate link: http://markwilkinson.me/saythanks
 Tags: dashboard, utility, framework
 Requires at least: 3.9
-Tested up to: 4.0.1
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,11 +26,62 @@ To install the plugin:
 
 None so far!
 
-== Screenshots ==
-
-1. The site options screen added to allow users to amend part of their site.
-
 == Changelog ==
+
+= 1.6.2 =
+* Moves the admin bar toggle links from front end to admin to the front of the admin bar menu so that it is the first item in the list.
+
+= 1.6.1 =
+* WP Basis super users get to see all widgets rather than only the ones not removed by the plugin.
+* Provides a filter for changing the admin bar links and titles.
+* Make admin bar elements removed filterable so they can be added back-in easier by developers for specific users.
+
+= 1.6 =
+* Tided up and documented a number of functions as well as compartmentalising functions into folders
+* Removed the wpbasis_var_dump() function - this is not a debugging plugin!
+* Removed previously included CMB library
+* Renamed template-tags.php to template-functions.php - they are functions not tags!
+* Add an updates tab to the WP Basis dashboard which indicates updates that are required.
+* Update the user capabilities removed by the plugin for none WP Basis users
+* Permissions for gravity forms for non wpbasis users. They can only read, edit and delete entries by default.
+* Remove widgets that are never used by default.
+
+= 1.5 =
+* Moved old functions into depreciated folder making use of _doing_it_wrong() to warn developers to choose alternative functions
+* Tided up some of the documentation on functions
+* Index referenced many of the filtered array to allow developers to more easily remove items added with filters
+* Only show the WP Basis Super User profile information when the users email domain matches that set in the WP Basis settings page
+* Removes the customize menu which as not working with previous code
+* Admin bar only now includes a show site/show admin link for none wpbasis users
+* Fix some notices with WP_DEBUG turned on
+* Login redirect now redirects without debugging errors. All users go to the wpbasis dashboard but the dashboard link in the admin menu always takes users to the appropriate dashboard home depending on whether they are a wpbasis user or not.
+
+= 1.4.2 =
+* Define constants correctly.
+
+= 1.4.1 =
+* Allow pages to be marked as contact page of this. A function then allows you to get the contact pages' ID
+
+= 1.4 =
+* Use SASS for the admin plugins css
+* Combine all admin JS into one file
+* Remove all unused code as a result of ditching some functions into legacy code
+* Remove plugins menu in multisite for non super users
+
+= 1.3.1 =
+* Move the meta boxes framework into the old folder. Should not be used in this plugin anymore, instead loaded as a mu-plugin.
+
+= 1.3 =
+* Remove site options by default - can be turned on with a filter
+* Remove post type descriptions by default - can be turned on with a filter
+* Allow wpbasis_featured_img_url to get url for a specific post
+* Moves code no longer used into an old folder
+
+= 1.2 =
+* adds a filter to allow developers to change the location, within the theme of the login logo.
+
+= 1.1 =
+* Adds a filter to allows developers to easily remove the site options page.
 
 = 1.0 =
 * Remove the default WordPress update nag
