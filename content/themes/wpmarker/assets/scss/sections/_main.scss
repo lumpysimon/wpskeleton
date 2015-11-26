@@ -1,0 +1,51 @@
+body {
+	font-family: $font-family;
+	color: #333333;
+}
+
+/**
+ * style the site heading tags
+ * all heading not in the .entry-content
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-headings;
+	font-weight: normal;
+	margin-bottom: 16px;
+}
+
+h1.page-title {
+	font-size: 3rem;
+}
+
+/**
+ * style the .entry-content div
+ * used mainly for post/page content
+ * or content when doing a custom loop
+ */
+.entry-content {
+	
+	/* heading tags */
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 16px;
+	}
+	
+	p {
+		font-size: 1.4rem;
+		line-height: 1.5;
+		margin-bottom: 16px;
+	}
+	
+	/* lists */
+	ol, ul {
+		padding-left: 12px;
+		margin-left: 12px;
+		margin-bottom: 12px;
+	}
+	
+	li {
+		margin-bottom: 5px;
+		line-height: 1.5;
+		font-size: 1.4rem;
+	}
+	
+}

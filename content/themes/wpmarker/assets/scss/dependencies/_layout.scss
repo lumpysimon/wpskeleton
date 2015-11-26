@@ -1,0 +1,94 @@
+.container {
+	margin: 0 auto;
+}
+.content-area {
+	
+}
+
+/* no gridset layout items
+-------------------------------------------------------------- */
+.qcol {
+	float: left;
+	margin-right: 0.833333%; /* 8 / 960 */
+}
+.quarter {
+	width: 24.375%; /* 234 / 960 */
+}
+.half {
+	width: 49.583333%; /* 476 / 960 */
+}
+.threequarters {
+	width: 74.791667%; /* 718 / 960 */
+}
+.tcol {
+	float: left;
+	margin-right: 2%;
+}
+.third {
+	width: 32%;
+}
+.twothird {
+	width: 66%;
+}
+
+/* large desktops
+-------------------------------------------------------------- */
+@media only screen and ( min-width: 1200px )  {
+
+	.container {
+		width: 1170px;
+	}
+
+}
+
+/* smalller desktops
+-------------------------------------------------------------- */
+@media only screen and ( min-width: 980px ) and ( max-width: 1199px )  {
+	
+	.container {
+		width: 960px;
+	}
+	
+}
+
+/* tablets (ish)
+-------------------------------------------------------------- */
+@media only screen and ( min-width: 768px ) and ( max-width: 979px )  {
+	
+	.container {
+		width: 724px;
+	}	
+	
+}
+
+/* large smart phones
+-------------------------------------------------------------- */
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+	
+	.container {
+		width: 94%;
+	}
+	.twothird,
+	.third,
+	.quarter {
+		width: 100%;
+		float: none;
+	}
+	
+}
+
+/* small smart phones
+-------------------------------------------------------------- */
+@media only screen and ( max-width: 479px ) {
+	
+	.container {
+		width: 90%;
+	}
+	.twothird,
+	.third,
+	.quarter {
+		width: 100%;
+		float: none;
+	}
+	
+}
