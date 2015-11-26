@@ -13,7 +13,6 @@ content/uploads/
 content/mu-plugins/debugging.php
 content/mu-plugins/testing.php
 content/plugins/debug-bar/
-content/plugins/registered-users-only/
 content/plugins/duplicate-post/
 content/wp-cache-config.php
 *.codekit
