@@ -28,13 +28,13 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	 */
 	define( 'DISALLOW_FILE_MODS', true );
 	
-	/**
-	 * Custom Content Directory
-	 */
-	define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
-	define( 'WP_CONTENT_URL', 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/content' );
-	
 }
+
+/**
+ * Custom Content Directory
+ */
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/content' );
 
 /**
  * You almost certainly do not want to change these

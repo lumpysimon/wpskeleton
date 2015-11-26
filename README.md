@@ -8,7 +8,7 @@ WordPress core exists in the `cms` folder, 1 level up from the sites root. This 
 
 ## Usage Instructions
 
-1. Clone the reposity in the root of your website (usually `public_html` or htdocs on an apache server).
+1. Clone the reposity in the root of your website (usually `public_html` or `htdocs` on an apache server).
 2. Edit the name of the `local-config-sample.php` file to `local-config.php` and add the connection details to your local database in that file
 3. Add the live site database connection details in the `wp-config.php` file. This should be added starting on line 9. You should also remember to include your salts in this file for security.
 4. Vist the domains url locally and you should receive the normal WordPress installation steps after the database connection stage. Install WordPress normally from here.
